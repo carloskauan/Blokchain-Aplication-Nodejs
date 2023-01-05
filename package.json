@@ -1,0 +1,28 @@
+{
+  "dependencies": {
+    "crypto-js": "^4.1.1"
+  },
+  "devDependencies": {
+    "jest": "^29.3.1"
+  },
+  "name": "blockchain",
+  "version": "1.0.0",
+  "description": "Um projeto blockchain com nodejs",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "jest --watchALL"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carloskauan/blockchain.git"
+  },
+  "author": "Carlos Kauan Brito Monteiro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/carloskauan/blockchain/issues"
+  },
+  "homepage": "https://github.com/carloskauan/blockchain#readme"
+}
