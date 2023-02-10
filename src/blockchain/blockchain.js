@@ -30,6 +30,7 @@ class Blockchain{
   replaceChain(newChain){ //Recebendo chains e verificando validade e executando a troca da atual pela maior recebida
     if(newChain.length <= this.chain.length){ return;// Invalidando troca pelo tamanho
     }else if(!this.isValidChain(newChain)){ return; } // Invalidando troca por chain corrompida
+    console.log("Corrente trocada");
     this.chain = newChain;
   }
 }

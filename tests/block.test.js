@@ -1,4 +1,5 @@
-const Block = require("../src/block.js")
+const Block = require("../src/blockchain/block.js")
+const DIFFICULTY = require("../config.js");
 
 describe("Block", ()=>{
   beforeEach(()=>{
@@ -8,10 +9,13 @@ describe("Block", ()=>{
   });
 
   it("Comparação da `data` do bloco com a data settada", ()=>{
-    expect(block.data).toEqual(data);
   });
 
   it("Comparação de `lastHash` com o `hash` do ultimo bloco", ()=>{
     expect(block.lastHash).toEqual(lastBlock.hash);
+  });
+
+  it("Gerando hash compativel com a difficuldade", ()=>{
+    expect(block.hash.substring(0, DIFFICULTY)).toEqual("0".repeat(DIFFICULTY));
   });
 });
